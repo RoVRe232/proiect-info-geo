@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Saline din Romania</title>
+<link type="text/css" href="stylesheet.css" rel="stylesheet" />
+<script>
+	function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+	
+	$(window).bind('scroll',function(e){
+    	parallaxScroll();
+	});
+	
+	function parallaxScroll(){
+		var scrolled = $(window).scrollTop();
+		$('#bg-image1').css('top',(0-(scrolled*.25))+'px');
+    	$('#bg-image2').css('top',(0-(scrolled*.5))+'px');
+		
+	}
+        
+    
+    
+    
+</script>
+</head>
+<body>
+<div id="mainWrapper">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+  <a href="#">Despre noi</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="contact.html">Contacteaza-ne</a>
+</div>
+<div id="main">
+    
+    <div id="hMenu" class="bg-image1">
+        <span onClick="openNav()" id="opennav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <div class="hMenuButton"><a href="#" style="color: #c40d2e; font-weight: bold;" >Acasa</a></div>
+        <div class="hMenuButton"><a href="galerie.html" onClick="currentSlide(2)">Galerie</a></div>
+        <div class="hMenuButton"><a href="#3" onClick="currentSlide(3)">Despre noi</a></div>
+        <div class="hMenuButton"><a href="contact.html" target="_blank">Contacteaza-ne</a></div>
+        <!--<div class="hMenuButton" style="float: right; border:none; margin: 0; padding-top: 20px;"><a href="https://www.facebook.com/remus.rv" target="_blank"><img src="images/Logomakr_9LbUlV.png" width="40px" height="40px"></a></div>
+        <div class="hMenuButton" style="float: right; border:none; margin: 0; padding-top: 20px;"><a href="#"><img src="images/Logomakr_4mOeKz.png" width="40px" height="40px"></a></div>-->
+    </div>
+	<div class="autoSlideshowContainer">
+        <div class="mySlides fade">
+            <div class="slideImage" style="background-image: url(images/shutterstock_294938504_90430700.jpg)">
+                <center><div class="square">
+                    <h1 style="font-size: 6vh; font-weight: bold; color: white;">Salina Turda</h1><br><p style="font-size: 3vh; color: antiquewhite;">Salina Turda constituie astazi un adevarat muzeu de istorie a mineritului in sare. Starea excelenta de conservare a lucrarilor miniere si a utilajelor utilizate la transportul sarii, alaturi de grija cu care s-au efectuat lucrarile de pregatire a salinei pentru a deveni obiectiv turistic, au facut ca istoria si legenda sa se impleteasca</p>
+                    <a href="#" class="findMore">Afla mai multe</a>
+                    </div>
+                
+                </center>
+            </div>
+            
+        </div>
+        <div class="mySlides fade">
+            <div class="slideImage" style="background-image: url(images/Blmzdc3.jpg)"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="slideImage" style="background-image: url(images/Blmzdc3.jpg)"></div>
+        </div>
+        
+        
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+		
+	
+</div>
+
+
+</div>
+</body>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 20000); // schimba imaginea
+    }
+    
+</script>
+</html>

@@ -1,0 +1,200 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    
+	zoom: 85%;
+}
+
+#mainWrapper{
+    min-height: 100%;
+    
+}
+
+#logo{
+    position: fixed;
+    z-index: 10;
+    right:250px;
+	top:40px;
+    width: 230px;
+    height: 50px;
+}
+
+#opennav{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: inline;
+    float: left;
+    margin: 20px 30px;
+}
+
+#opennav div{
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: white;
+}
+
+#opennav:hover div{
+    background-color: #c40d2e;
+    transition: 0.2s;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+}
+
+
+#hMenu{
+    width: 97%;
+    height: 80px;
+    margin: 20px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+    z-index: 10;
+    
+}
+
+.hMenuButton{
+    display: inline;
+    float: left;
+    margin: 25px 10px;
+    border-right: 1px solid white;
+}
+
+.hMenuButton a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 12px 26px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.hMenuButton a:hover{
+    color: #c40d2e;
+    
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    
+}
+
+.hMenuButton a:active{
+    color: #c40d2e;
+}
+
+#main{
+    background-image: url(images/00dc86c0265baa965727d323033b91fa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.cover{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*forms */
+
+input[type=text] , select {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    /*border: 1px solid #ccc;*/
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+    
+}
+
+input[type=submit] {
+    width: 60%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 5vh;
+}
+
+input[type=email], select{
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    /*border: 1px solid #ccc;*/
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid grey;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=textbox]{
+    width: 80%;
+    height: 40%;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 30px;
+}
+
+.formText{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+#textarea{
+    width: 95%;
+    height: 40%;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 25px;
+    
+}
+
+
