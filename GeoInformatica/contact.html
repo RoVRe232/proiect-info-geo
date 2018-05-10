@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Contact</title>
+<link type="text/css" href="contactStylesheet.css" rel="stylesheet" />
+
+<script>
+	function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+	
+	$(window).bind('scroll',function(e){
+    	parallaxScroll();
+	});
+	
+	function parallaxScroll(){
+		var scrolled = $(window).scrollTop();
+		$('#bg-image1').css('top',(0-(scrolled*.25))+'px');
+    	$('#bg-image2').css('top',(0-(scrolled*.5))+'px');
+		
+	}
+</script>
+</head>
+<body>
+    
+    
+    
+<div id="mainWrapper">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<div id="main">
+    
+    
+    <div id="hMenu" class="bg-image1">
+        <span onClick="openNav()" id="opennav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <div class="hMenuButton"><a href="index.html">Acasa</a></div>
+        <div class="hMenuButton"><a href="galerie.html">Galerie</a></div>
+        <div class="hMenuButton"><a href="about.html" onClick="currentSlide(3)">Despre noi</a></div>
+        <div class="hMenuButton"><a href="contact.html" style="color: #c40d2e; font-weight: bold;">Contacteaza-ne</a></div>
+        
+    </div>
+	
+    <div class="cover">
+        <center>
+        <br><br><br><br><br><br><br><br>
+        <h1 style="font-size: 8vh;color: white;">Spune-ne o parare!</h1>
+        <hr style="width: 50vw;">
+        <div style="height: 80vh; width: 60vw; margin-top: 5vh; background-color: rgba(255,255,255, 0.4); overflow: auto">
+            <form action="/action_page.php" id="contactForm">  
+                <label for="fname" class="formText">Nume</label>
+                <input type="text" id="fname" name="firstname" placeholder="ex. John">
+                
+                <label for="lname" class="formText">Prenume</label>
+                <input type="text" id="lname" name="lastname" placeholder="ex. Snow">
+                
+                <label for="email" class="formText">Adresa de e-mail</label> 
+                <input type="email" name="email" id="email" placeholder="ex. JohnSnow@gmail.com">
+                <br>
+                <h1>Continut</h1>
+                <textarea name="content" form="contactForm" placeholder="Introduceti textul aici" rows="4" cols="50" id="textarea"></textarea>
+                
+                
+                <input type="submit" value="Trimite">
+            </form>
+        </div>
+        
+        </center>
+    </div>
+		
+	
+</div>
+
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    
+	zoom: 85%;
+}
+
+#mainWrapper{
+    min-height: 100%;
+    
+}
+
+
+#opennav{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: inline;
+    float: left;
+    margin: 20px 30px;
+}
+
+#opennav div{
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: white;
+}
+
+#opennav:hover div{
+    background-color: #c40d2e;
+    transition: 0.2s;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+}
+
+
+#hMenu{
+    width: 97%;
+    height: 80px;
+    margin: 20px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+    z-index: 10;
+    
+}
+
+.hMenuButton{
+    display: inline;
+    float: left;
+    margin: 25px 10px;
+    border-right: 1px solid white;
+}
+
+.hMenuButton a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 12px 26px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.hMenuButton a:hover{
+    color: #c40d2e;
+    
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    
+}
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    
+    
+}
+
+.content p{
+    font-size: 25px;
+    width: 90vw;
+    margin-left: 20px;
+}
+
+.content h1{
+    font-size: 35px;
+    color: white;
+    margin-left: 30px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+input#un-mute {
+  display: none;
+}
+
+.unmute img {
+  display: none;
+}
+
+input#un-mute:checked ~ .unmute img {
+  display: initial;
+}
+
+input#un-mute:checked ~ .mute img {
+  display: none;
+}
+
+.gridtype1{
+    margin:10px;
+    
+    width: 40vw;
+    height: 60vh;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gridtype2{
+    margin:10px;
+    
+    width: 40vw;
+    height: 60vh;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gridtype3{
+    margin:10px;
+    
+    width: 70vw;
+    height: 70vh;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 
+}
+
+.gridtype4{
+    margin:10px;
+    width: 40vw;
+    height: 70vh;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.grd:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.title{
+    font-size: 40px;
+    
+}
+
+.subtitle{
+    font-size: 30px;
+}
+
+.scris{
+    font-size: 25px;
+}
+
+.drk{
+    width: 100%;
+    height: 100%;
+    transition: 0.6s ease-in-out;
+}
+
+.drk:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(0,0,0,0.3);
+    
+}
+
+/*vertical sticky menu*/
+
+.vertical-menu {
+    display: inline-block;
+    width: 300px; 
+    float:left;
+    margin: 70px 30px;
+    position: sticky;
+    top: 150px;
+    z-index: 25;
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 25px;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+.vertical-menu .indent{
+    padding-left: 40px;
+}
+
+
+
+

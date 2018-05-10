@@ -1,0 +1,583 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Saline din Romania</title>
+<link type="text/css" href="stylesheet.css" rel="stylesheet" />
+<script>
+	function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        
+    }
+    
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+	
+	$(window).bind('scroll',function(e){
+    	parallaxScroll();
+	});
+	
+	function parallaxScroll(){
+		var scrolled = $(window).scrollTop();
+		$('#bg-image1').css('top',(0-(scrolled*.25))+'px');
+    	$('#bg-image2').css('top',(0-(scrolled*.5))+'px');
+		
+	}
+        
+    
+    
+    
+</script>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+<div id="mainWrapper">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+<center><h2 style="font-size: 30px; color: darkred"> Meniu:</h2></center>
+    <hr style="width: 50%"><br>
+  <a href="#tag1">Salina Turda</a><br>
+  <a href="#tag2">Salina Praid</a><br>
+  <a href="#tag3">Salina Slanic Prahova</a><br>
+  <a href="contact.html">Contacteaza-ne</a>
+</div>
+<!--
+<div class="vertical-menu">
+
+                        <a href="#slide3">Saline</a>
+                        <a href="#gear" class="">Salina1</a>
+                        <a href="#rope" class="indent">Salina1images</a>
+                        <a href="#quickdraw" class="indent">Salina1video</a>
+                        <a href="#gear" class="">Salina2</a>
+                        <a href="#rope" class="indent">Salina2images</a>
+                        <a href="#quickdraw" class="indent">Salina2video</a>
+                        <a href="#gear" class="">Salina3</a>
+                        <a href="#rope" class="indent">Salina3images</a>
+                        <a href="#quickdraw" class="indent">Salina3video</a>
+                    </div>
+-->
+<div id="main">
+    
+    <div id="hMenu" class="bg-image1">
+        <span onClick="openNav()" id="opennav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <div class="hMenuButton"><a href="#" style="color: #c40d2e; font-weight: bold;" >Acasa</a></div>
+        <div class="hMenuButton"><a href="galerie.html" onClick="currentSlide(2)">Galerie</a></div>
+        <div class="hMenuButton"><a href="about.html" onClick="currentSlide(3)">Despre noi</a></div>
+        <div class="hMenuButton"><a href="contact.html">Contacteaza-ne</a></div>
+        <!--<div class="hMenuButton" style="float: right; border:none; margin: 0; padding-top: 20px;"><a href="https://www.facebook.com/remus.rv" target="_blank"><img src="images/Logomakr_9LbUlV.png" width="40px" height="40px"></a></div>
+        <div class="hMenuButton" style="float: right; border:none; margin: 0; padding-top: 20px;"><a href="#"><img src="images/Logomakr_4mOeKz.png" width="40px" height="40px"></a></div>-->
+    </div>
+	<div class="autoSlideshowContainer">
+        <div class="mySlides fade">
+            <div class="slideImage" style="background-image: url(images/shutterstock_294938504_90430700.jpg); background-attachment: fixed;">
+                <center><div class="square">
+                    <h1 style="font-size: 6vh; font-weight: bold; color: white;">Salina Turda</h1><br><p style="font-size: 3vh; color: antiquewhite;">Salina Turda constituie astazi un adevarat muzeu de istorie a mineritului in sare. Starea excelenta de conservare a lucrarilor miniere si a utilajelor utilizate la transportul sarii, alaturi de grija cu care s-au efectuat lucrarile de pregatire a salinei pentru a deveni obiectiv turistic, au facut ca istoria si legenda sa se impleteasca</p>
+                    <a href="#" class="findMore">Afla mai multe</a>
+                </div>
+                    
+                
+                </center>
+            </div>
+            
+        </div>
+        <div class="mySlides fade">
+            <div class="slideImage" style="background-image: url(images/0_Salina-Praid-2-16x9.jpg)">
+                <center><div class="square">
+                    <h1 style="font-size: 6vh; font-weight: bold; color: white;">Salina Praid</h1><br><p style="font-size: 3vh; color: antiquewhite;">Statiunea Praid a devenit cunoscuta datorita minei de sare care este cea mai mare din Europa. In salina din adancului muntelui, gasesti in miniatura un mic oras subteran cu baze de tratament, locuri de joaca pentru cei mici, o capela, o galerie a vinurilor si arta.</p>
+                    <a href="#" class="findMore">Afla mai multe</a>
+                </div>
+                    
+                
+                </center>
+            </div><!-- Salina Praid-->
+        </div>
+        <div class="mySlides fade">
+            <div class="slideImage" style="background-image: url(images/Gate_but_no_fence_-_geograph.org.uk_-_711557.jpg)">
+                    <center><div class="square">
+                        <h1 style="font-size: 6vh; font-weight: bold; color: white;">Salina Slanic Prahova</h1><br><p style="font-size: 3vh; color: antiquewhite;">Salina Slanic Prahova cunoscuta si sub numele de Mina Unireaeste cea mai mare salina din Europa. Este una dintre atractiile statiunii balneoclimaterice Slanic Prahova, situata la 44 km de Ploiesti si 100 km de Bucuresti.</p>
+                        <a href="#" class="findMore">Afla mai multe</a>
+                    </div>
+                        <!--<div id="map" style="width:45vw;height:45vh"></div>-->
+
+                    </center>
+            
+            </div><!--Salina slanic prahova-->
+            
+        </div>
+        
+        
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+    </div>
+    <div class="slide slide1" style="height: 1700px;"><center>
+        <h1 style="color: darkred; font-size: 40px;">Salinele romanesti, la limita dintre realitate si miracol</h1>
+        <h2 style="color: darkred; font-size: 30px;">Tratament pentru trup si minte</h2>
+        <p style="color: grey; font-size:30px; width: 70%;">Salinele reprezinta adevarate obiective turistice, iar minele de sare, vechi, istorice, au devenit cu timpul mijloace de tratament pentru minte, trup si suflet.
+O cura in salina iti poate ameliora starea de sanatate.</p>
+         <br><hr id="tag1" style="width: 90vw; color: darkred;height: 1px;"><br>
+        <p style="color: grey; font-size:30px; width: 70%;">Sa vedem insa care sunt salinele din Romania si cum ne pot impresiona ele pentru a le vizita - ca turisti sau pentru tratament. Mai jos aveti o lista cu cele mai cunoscute saline din tara noastra.</p>
+        <div style="width: 120vw; height: 80%; margin-top: 50px; background-color: rgba(244, 238, 153, 0.2);">
+            <center><h1  style="color: darkred; font-size: 50px;">Salina Turda:</h1></center>
+            <div class="imagini" style="display: inline;float: left;width: 50%;height: 60%;  margin: 4vh; "> 
+                <div class="imgtype1 gal modimage" onclick="showModal(0)" style="background-image: url(images/220987_209680225733172_813840_o.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype2 gal" style="background-image: url(images/241538_209678619066666_5845631_o.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype2 gal" style="background-image: url(images/241675_209679782399883_8241123_o.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype1 gal" style="background-image: url(images/242358_209672159067312_6239025_o.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+            </div>
+            <div class="text" style="display: inline;float: left;width: 40%;height: 60%; margin: 4vh; overflow: scroll">
+                <h1 style="font-size: 40px;">Salina Turda</h1>
+                <h2 style="font-size: 30px;">Istorie si frumusete</h2>
+                <p style="font-size: 25px; color: gray;font-family: sans-serif;">Salina Turda este situata in zona numita Durgau - Valea Sarata in localitatea Turda, judetul Cluj. Este cea mai populara destinatie a turistilor ce viziteaza aceasta zona. Mina de sare de la Turda dateaza inca din perioada romanilor si a fost unul dintre motivele pentru care localitatea s-a dezvoltat vertiginos si dupa retragerea romanilor din Dacia.</p>
+                <br><hr style="width: 70%; height: 1px;"><br>
+                <h1 style="font-size: 40px;">Istoria salinei</h1>
+                <p style="font-size: 25px; color: gray;font-family: sans-serif;">Exploatarea sarii a inceput aici inca din <b>perioada romana</b>. La inceputul secolului al XVIII-lea, minele de sare de la Turda erau cele mai importante mine de sare din Transilvania. Zacamantul de sare de la Turda are peste 13 milioane de ani, o grosime medie de 250 metri (pe alocuri ajunge la 1200 m) si cantareste peste 38 de miliarde de tone.</p>
+                <br><hr style="width: 70%; height: 1px;"><br>
+                
+                <h2 style="font-size: 30px;color: darkred;">Distanta dintre marile orase si Turda:</h2>
+                
+                <ul id="textList">
+                    <li>Satu Mare - Turda - 190 km</li>
+                    <li>Oradea - Turda - 177 km</li>
+                    <li>Suceava - Turda - 340 km</li>
+                    <li>Timisoara - Turda - 320 km</li>
+                    <li>Sibiu - Turda - 165 km</li>
+                    <li>Brasov - Turda - 265 km</li>
+                    <li>Bucuresti - Turda - 430 km</li>
+                </ul>
+                
+                <br><hr style="width: 70%; height: 1px;"><br>
+                <h1 style="font-size: 40px;">Structura salinei</h1>
+                <p style="font-size: 25px; color: gray;font-family: sans-serif;">Pentru modernizarea salinei s-au investit 6 milioane de euro. Salina are acum un aer ultra-modern. Sala mai mica a salinei Turda, mina Gizela, contine o sala de tratament dotata cu vestiare, bai si spatii de odihna, o sala de fitness si un cabinet medical. Mina cu roata mare, mina Rudolf, are o roata cu 6 gondole, pavilion de minigolf, minibowling, un amfiteatru, o sala de sport, toalete si spatii de odihna. Accesul in aceasta sala se realizeaza prin intermediul unui lift panoramic, cu o capacitate de 10 persoane. Din mina Rudolf se face trecerea in minaTerezia, inaccesibila in trecut, cea cu lacul, unde este amenajata o insula accesibila prin intermediul unui pod de 40 m lungime. Pe lac se pot face acum plimbari cu barca intr-o atmosfera inedita.</p>
+            </div>
+            <hr>
+            <hr style="width: 90vw; color: grey;">
+            <div class="videoclip" style="width: 120vw;height: 80%;display: inline-block;">
+                <video width="1660px" height="900px" controls>
+                
+                    <source src="videos/SalinaTurda__%20IncredibleRomania%5B4K%5D.mp4" type="video/mp4">
+                    Browserul dvs nu recunoaste tag-ul video
+                </video>
+            </div>
+        </div>
+        </center>
+    </div>
+    <div class="slide slide1" style="margin-top: 60vh;">
+        <div style="width: 80%; height: 80%; margin-top:800px; margin-left: 10vw;  overflow: scroll;">
+            <h1>Un scurt quiz</h1>
+            <h2>Un quiz pentru verificarea cunostiintelor</h2>
+            <form>
+                <p style="font-size: 25px">Care este capitala Angliei?</p><br>
+                <input type="radio" name="raspuns1" value="a">Rusia<br>
+                <input type="radio" name="raspuns1" value="b">Rrrrrusia<br>
+                <input type="radio" name="raspuns1" value="c">RRRRRRRRRRRUSSIA<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+        </div>
+    
+    </div>
+    <center><h1 style="font-size: 50px; color: darkred;">Rezervati o camera:</h1> </center>
+    <div class="slide slide2 parallax">
+        
+        <center><div style="width: 90vw;height: 130%; margin: 10vh;border-radius: 10vh; background-color: rgba(0,0,0,0)">
+               
+            
+            <iframe src="https://www.booking.com/searchresults.ro.html?aid=357015&label=gog235jc-city-ro-ro-turdaNro-unspec-ro-com-L%3Aro-O%3AwindowsS7-B%3Achrome-N%3AXX-S%3Abo-U%3Ac-H%3As&sid=b2dbef597ce418e75a529aa5b388c1d2&sb=1&src=city&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fro%2Fturda-ro.ro.html%3Faid%3D357015%3Blabel%3Dgog235jc-city-ro-ro-turdaNro-unspec-ro-com-L%253Aro-O%253AwindowsS7-B%253Achrome-N%253AXX-S%253Abo-U%253Ac-H%253As%3Bsid%3Db2dbef597ce418e75a529aa5b388c1d2%3Binac%3D0%26%3B&ssne=Turda&ssne_untouched=Turda&city=-1173043&checkin_monthday=&checkin_month=&checkin_year=&checkout_monthday=&checkout_month=&checkout_year=&no_rooms=1&group_adults=2&group_children=0&from_sf=1&user_changed_date=0" style="width: 100%; height: 100%">
+                <p>Your browser does not support iframes.</p>
+             </iframe>
+            <h1>Opinia noastra:</h1>
+            <h2>Si mai mult scris</h2>
+            <p style="width: 1000px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis, sit amet iaculis risus. Nulla maximus enim ut sagittis bibendum. Proin bibendum dui id libero ultricies consectetur. Sed ac urna non nunc commodo pharetra. Praesent at felis eros. Maecenas turpis ex, efficitur a lorem vel, laoreet suscipit mauris.</p>
+            
+            <div id="slide3container">
+            <div class="s3image" id="s3image1"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>Priveliste impresionanta</h1></center>
+                <br><br>
+                <center><p>La salina Turda va veti bucura de amintiri de neuitat. </p></center>
+            </div></div>
+            <div class="s3image" id="s3image2"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>O plimbare pe lac</h1></center>
+                <br><br>
+                <center><p>Vizitatorii salinei Turda au ocazia de a admira privelistea din barca.</p></center>
+            </div></div>
+            <div class="s3image" id="s3image3"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>Mese de ping-pong si alte activitati </h1></center>
+            </div></div>
+            <div class="s3image" id="s3image4"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>Structuri unice si impresionante</h1></center>
+                <br><br>
+                
+            </div></div>
+            
+            </div>
+            <center><a href="#" class="findMore">Galerie</a></center>
+            
+        </div></center> 
+    </div>
+    
+    <div class="slide slide1" style="height: 1700px;margin-top: 1800px;"><center>
+        <h1 style="color: darkred; font-size: 40px;">Statiunea Praid</h1>
+        <h2 style="color: darkred; font-size: 30px;">Inima muntelui</h2>
+        <p style="color: grey; font-size:30px; width: 70%;">Statiunea Praid a devenit cunoscuta datorita minei de sare care este cea mai mare din Europa. In salina din adancului muntelui, gasesti in miniatura un mic oras subteran cu baze de tratament, locuri de joaca pentru cei mici, o capela, o galerie a vinurilor si arta.</p>
+         <br><hr id="tag2" style="width: 90vw; color: darkred;height: 1px;"><br>
+        <p style="color: grey; font-size:30px; width: 70%;">Dupa "calatoria" cu autobuzul, accesul in salina se face coborand 300 de trepte abrupte iar in fata ochilor apare un adevarat orasel subteran, la 120 de metri adancime.</p>
+        <div style="width: 120vw; height: 80%; margin-top: 50px; background-color: rgba(244, 238, 153, 0.2);">
+            <center><h1  style="color: darkred; font-size: 50px;">Salina Praid:</h1></center>
+            <div class="imagini" style="display: inline;float: left;width: 50%;height: 60%;  margin: 4vh; "> 
+                <div class="imgtype1 gal modimage" onclick="showModal(0)" style="background-image: url(images/IMG_20140830_135040.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype2 gal" style="background-image: url(images/SalinaPraid09.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype2 gal" style="background-image: url(images/712271-DxvYoOczyHhzHynIRQo15JpJxZ7kAUMJ.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype1 gal" style="background-image: url(images/Salina-Praid-Lacul-Sfanta-Ana-Tinovul-Mohos.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+            </div>
+            <div class="text" style="display: inline;float: left;width: 40%;height: 60%; margin: 4vh; overflow: scroll">
+                <!--<h1 style="font-size: 40px;">Salina Turda</h1>-->
+                <h2 style="font-size: 30px;">Cum a fost creata?</h2>
+                <p style="font-size: 25px; color: gray;font-family: sans-serif;">Prin exploatari masive de sare au ramas goluri subterane de mari dimensiuni, unde s-a individualizat un microclimat de salina, cu temperaturi relativ constante tot timpul anului, intre 14-16°C, umiditate scazuta 66-70% si presiune mai mare decat la suprafata in medie de 735-738 mmHg. Aerul este puternic ionizat, deosebit de eficient in tratarea afectiunilor respiratorii.</p>
+                
+                <br><hr style="width: 70%; height: 1px;"><br>
+                
+                <h2 style="font-size: 30px;color: darkred;">Caracteristicile Salinei Praid:</h2>
+                
+                <ul id="textList">
+                    <li>aerul din galeriile subterane este curat, fara factori alergogeni</li>
+                    <li>umiditatea relativ ridicata provoca practic lipirea particulelor de praf, microbilor, polenului si ciupercilor pe pereti, curatindu-se astfel aerul</li>
+                    <li>continutul ridicat de calciu are ca efect scaderea potentialului de infectie</li>
+                    <li>absenta senzatiei de rece datorita lipsei de miscare a aerului</li>
+                    <li>ionizarea negativa ridicata micsoreaza numarul de crize asmatice</li>
+                    <li>ph-ul coborat asigura sterilizarea aerului si deci distrugerea florei bateriene</li>
+                    <li>presiunea oxigenului este mai mare decat la suprafata lucru determina o mai buna oxigenare a organismului</li>
+                </ul>
+                
+                <br><hr style="width: 70%; height: 1px;"><br>
+                <h1 style="font-size: 40px;">Efectul terapeutic:</h1>
+                <p style="font-size: 25px; color: gray;font-family: sans-serif;">Tratamentul de speleoterapie si climatoterapie cuprinde practic inhalarea aerului din mina, fiind foarte util in cazul bolilor cailor respiratorii (boli astmatice, bronsitice si alergice). Pe timpul petrecut in subteran se recomanda si gimnastica condusa de un cadru specializat, plimbari, si dozarea efortului fizic etc. Ca interval de varsta aici se pot trata copii de la 2 ani pana la persoane care sunt deja la varsta senectutii. Pentru rezultate bune, sunt necesare cam 18 zile petrecand cel putin 4 ore pe zi in salina.</p>
+            </div>
+            <hr>
+            <hr style="width: 90vw; color: grey;">
+            <div class="videoclip" style="width: 120vw;height: 80%;display: inline-block;">
+                <iframe width="1200" height="630" src="https://www.youtube.com/embed/NkBWKWupcAQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        </center>
+    </div>
+    <div class="slide slide1" style="margin-top: 60vh;">
+        <div style="width: 80%; height: 80%; margin-top:800px; margin-left: 10vw;  overflow: scroll;">
+            <h1>Un scurt quiz</h1>
+            <h2>Un quiz pentru verificarea cunostiintelor</h2>
+            <form>
+                <p style="font-size: 25px">Care este capitala Angliei?</p><br>
+                <input type="radio" name="raspuns1" value="a">Rusia<br>
+                <input type="radio" name="raspuns1" value="b">Rrrrrusia<br>
+                <input type="radio" name="raspuns1" value="c">RRRRRRRRRRRUSSIA<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+        </div>
+    
+    </div>
+    <center><h1 style="font-size: 50px; color: darkred;">Rezervati o camera:</h1> </center>
+    <div class="slide slide2 parallax">
+        
+        <center><div style="width: 90vw;height: 130%; margin: 10vh;border-radius: 10vh; background-color: rgba(0,0,0,0)">
+               
+            
+            <iframe src="https://www.booking.com/searchresults.ro.html?aid=357015&label=gog235jc-city-ro-ro-praid-unspec-ro-com-L%3Aro-O%3AwindowsS7-B%3Achrome-N%3AXX-S%3Abo-U%3Ac-H%3As&sid=b2dbef597ce418e75a529aa5b388c1d2&sb=1&src=city&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fro%2Fpraid.ro.html%3Faid%3D357015%3Blabel%3Dgog235jc-city-ro-ro-praid-unspec-ro-com-L%253Aro-O%253AwindowsS7-B%253Achrome-N%253AXX-S%253Abo-U%253Ac-H%253As%3Bsid%3Db2dbef597ce418e75a529aa5b388c1d2%3Binac%3D0%26%3B&ssne=Praid&ssne_untouched=Praid&city=-1167748&checkin_monthday=&checkin_month=&checkin_year=&checkout_monthday=&checkout_month=&checkout_year=&no_rooms=1&group_adults=2&group_children=0&from_sf=1&user_changed_date=0" style="width: 100%; height: 100%">
+                <p>Your browser does not support iframes.</p>
+             </iframe>
+            <h1>Opinia noastra:</h1>
+            <h2>Si mai mult scris</h2>
+            <p style="width: 1000px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis, sit amet iaculis risus. Nulla maximus enim ut sagittis bibendum. Proin bibendum dui id libero ultricies consectetur. Sed ac urna non nunc commodo pharetra. Praesent at felis eros. Maecenas turpis ex, efficitur a lorem vel, laoreet suscipit mauris.</p>
+            
+            <div id="slide3container">
+            <div class="s3image" id="s3image1" style="background-image: url(images/salina_praid_18.jpg);"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>Capela</h1></center>
+                <br><br>
+                <center><p></p></center>
+            </div></div>
+            <div class="s3image" id="s3image2" style="background-image: url(images/0_Salina-Praid-16-x-9.jpg)"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>300 de trepte</h1></center>
+                <br><br>
+                <center><p></p></center>
+            </div></div>
+            <div class="s3image" id="s3image3" style="background-image: url(images/Salina-Praid-1.jpg);"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>Diverse activitati </h1></center>
+            </div></div>
+            <div class="s3image" id="s3image4" style="background-image: url(images/sobanya3.jpeg);"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1></h1></center>
+                <br><br>
+                <center><p></p></center>
+            </div></div>
+            <!--<div class="s3image" id="s3image5"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1>Olympic games</h1></center>
+                <br><br>
+                <center><p>Omega has been the official timekeeping device of the Olympic Games since 1932.</p></center>
+            </div></div>-->
+            </div>
+            <center><a href="#" class="findMore">Galerie</a></center>
+            
+        </div></center> 
+    </div>
+    
+    <div class="slide slide1" style="height: 1700px;margin-top: 1800px;"><center>
+        <h1 style="color: darkred; font-size: 40px;">Salina Slanic Prahova</h1>
+        <h2 style="color: darkred; font-size: 30px;">Cea mai mare salina din Europa</h2>
+        <p style="color: grey; font-size:30px; width: 70%;">Salina Slanic Prahova cunoscuta si sub numele de Mina Unirea 
+            este cea mai mare salina din Europa. Este una dintre atractiile statiunii balneoclimaterice Slanic Prahova, situata la 44 km de Ploiesti si 100 km de Bucuresti.</p>
+         <br><hr style="width: 90vw; color: darkred;height: 1px;"><br>
+        <p id="tag3" style="color: grey; font-size:30px; width: 70%;">Lucrarile miniere au inceput in anul 1938, iar exploatarea sarii din aceasta mina s-a efectuat intre anii 1943-1970. Dupa 1970, mina a devenit obiectiv turistic, oferind conditii naturale de exceptie in special pentru tratamentul afectiunilor respiratorii prin microclimatul sau bogat in aerosoli.</p>
+        <div style="width: 120vw; height: 80%; margin-top: 50px; background-color: rgba(244, 238, 153, 0.2);">
+            <center><h1  style="color: darkred; font-size: 50px;">Salina Slanic Prahova:</h1></center>
+            <div class="imagini" style="display: inline;float: left;width: 50%;height: 60%;  margin: 4vh; "> 
+                <div class="imgtype1 gal modimage" onclick="showModal(0)" style="background-image: url(images/salina-slanic-prahova.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype2 gal" style="background-image: url(images/14Salina-Turda-0011.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype2 gal" style="background-image: url(images/DSC_1561.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+                <div class="imgtype1 gal" style="background-image: url(images/salina-slanic-prahov.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+            </div>
+            <div class="text" style="display: inline;float: left;width: 40%;height: 60%; margin: 4vh; overflow: scroll">
+                <h1 style="font-size: 40px;">Baza de tratament</h1>
+                <h2 style="font-size: 30px;">Istorie si frumusete</h2>
+                <p style="font-size: 25px; color: gray;font-family: sans-serif;">Accesul in mina se realizeaza cu doua lifturi ce asigura transportul vizitatorilor pe verticala intre subteran si suprafata. Diferenta de cota este de 208 metri, iar drumul este parcurs cu liftul in aproximativ 2-3 minute.<br><br>Mina este alcatuita din 14 camere cu profil trapezoidal avand 10 m deschidere la tavan si 32 m la talpa si o inaltime de 54 m. La 40 de metri in sus de la tavanul salinei Unirea incepe podeaua unei saline mai mici - mina Mihai - care nu este accesibila publicului. O alta mina mai mica este mina Carol. Spatiul excavat ocupa un volum de 2,9 milioane metri cubi si se intinde pe o suprafata de 7.8 hectare.<br><br>Spatiul amenajat include spatii pentru practicarea sportului (fotbal, volei), piste de alergare, locuri de joaca, o sala cu mese de biliard si un bufet. Aici se mai pot admira basoreliefurile infatisandu-l pe Mihai Viteazul sau statuile lui Eminescu, Decebal, Traian (Sala Genezei).<br><br>Temperatura constanta de 12 grade C pe tot timpul anului (motiv pentru care se recomanda sa fim imbracati mai gros), umiditatea de 50%, compozitia aerului bogat in ioni de sodiu, presiunea atmosferica cu 18-20 mm coloana de mercur mai mare decat cea de la suprafata solului, lipsa factorilor alergeni creaza un microclimat special, constituind un mijloc natural de tratare a unor afectiuni.</p>
+                <br><hr style="width: 70%; height: 1px;"><br>
+                
+                
+                
+            </div>
+            <hr>
+            <hr style="width: 90vw; color: grey;">
+            <div class="videoclip" style="width: 120vw;height: 80%;display: inline-block;">
+                <iframe width="1200" height="630" src="https://www.youtube.com/embed/iV-kE7VzQpA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        </center>
+    </div>
+    <div class="slide slide1" style="margin-top: 60vh;">
+        <div style="width: 80%; height: 80%; margin-top:800px; margin-left: 10vw;  overflow: scroll;">
+            <h1>Un scurt quiz</h1>
+            <h2>Un quiz pentru verificarea cunostiintelor</h2>
+            <form>
+                <p style="font-size: 25px">Care este capitala Angliei?</p><br>
+                <input type="radio" name="raspuns1" value="a">Rusia<br>
+                <input type="radio" name="raspuns1" value="b">Rrrrrusia<br>
+                <input type="radio" name="raspuns1" value="c">RRRRRRRRRRRUSSIA<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+            <form>
+                <p style="font-size: 25px">Intrebare:</p><br>
+                <input type="radio" name="raspuns1" value="a">a<br>
+                <input type="radio" name="raspuns1" value="b">b<br>
+                <input type="radio" name="raspuns1" value="c">c<br>
+                <input type="submit" name="trimite"><br>
+            </form>
+        </div>
+    
+    </div>
+    <center><h1 style="font-size: 50px; color: darkred;">Rezervati o camera:</h1> </center>
+    <div class="slide slide2 parallax">
+        
+        <center><div style="width: 90vw;height: 130%; margin: 10vh;border-radius: 10vh; background-color: rgba(0,0,0,0)">
+               
+            
+            <iframe src="https://www.booking.com/searchresults.ro.html?aid=357015&label=gog235jc-city-ro-ro-slanic-unspec-ro-com-L%3Aro-O%3AwindowsS7-B%3Achrome-N%3AXX-S%3Abo-U%3Ac-H%3As&sid=b2dbef597ce418e75a529aa5b388c1d2&sb=1&src=city&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fro%2Fslanic.ro.html%3Faid%3D357015%3Blabel%3Dgog235jc-city-ro-ro-slanic-unspec-ro-com-L%253Aro-O%253AwindowsS7-B%253Achrome-N%253AXX-S%253Abo-U%253Ac-H%253As%3Bsid%3Db2dbef597ce418e75a529aa5b388c1d2%3Binac%3D0%26%3B&ssne=Sl%C4%83nic&ssne_untouched=Sl%C4%83nic&city=-1170715&checkin_monthday=&checkin_month=&checkin_year=&checkout_monthday=&checkout_month=&checkout_year=&no_rooms=1&group_adults=2&group_children=0" style="width: 100%; height: 100%">
+                <p>Your browser does not support iframes.</p>
+             </iframe>
+            <h1>Opinia noastra:</h1>
+            <h2>Si mai mult scris</h2>
+            <p style="width: 1000px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget accumsan turpis, sit amet iaculis risus. Nulla maximus enim ut sagittis bibendum. Proin bibendum dui id libero ultricies consectetur. Sed ac urna non nunc commodo pharetra. Praesent at felis eros. Maecenas turpis ex, efficitur a lorem vel, laoreet suscipit mauris.</p>
+            
+            <div id="slide3container">
+            <div class="s3image" id="s3image1" style="background-image: url(images/679_salina-slanic-prahova.jpg)"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1></h1></center>
+                <br><br>
+                <center><p></p></center>
+            </div></div>
+            <div class="s3image" id="s3image2" style="background-image: url(images/getimage.jpg)"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1></h1></center>
+                <br><br>
+                <center><p></p></center>
+            </div></div>
+            <div class="s3image" id="s3image3" style="background-image: url(images/Salina-Slanic-Prahova.jpg)"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1> </h1></center>
+            </div></div>
+            <div class="s3image" id="s3image4" style="background-image: url(images/7.jpg)"><div class="s3overlay">
+                <br><br><br><br><br>
+                <center><h1></h1></center>
+                <br><br>
+                <center><p></p></center>
+            </div></div>
+            
+            </div>
+            <center><a href="#" class="findMore">Galerie</a></center>
+            
+        </div></center> 
+    </div>
+    
+</div>
+    
+    
+
+
+
+</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    openNav();
+    
+    
+    
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // schimba imaginea
+    }
+    
+    var id = window.setTimeout(function() {}, 0);
+    
+    function currentSlide(n) {
+        
+        //setTimeout(20000);
+        id = window.setTimeout(function() {}, 0);
+        while (id--) {
+            window.clearTimeout(id); // will do nothing if no timeout with id is present
+        }
+        showSlides(slideIndex = n);
+    }
+    /*map controls*/
+    
+    
+    
+    function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(46.58620, 23.78770),
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+    
+    
+    
+    
+</script>
+    
+    
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</html>

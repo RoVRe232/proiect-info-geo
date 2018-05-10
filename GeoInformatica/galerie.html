@@ -1,0 +1,417 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Galerie</title>
+<link type="text/css" href="galerieStylesheet.css" rel="stylesheet" />
+<script>
+	function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+	
+	$(window).bind('scroll',function(e){
+    	parallaxScroll();
+	});
+	
+	function parallaxScroll(){
+		var scrolled = $(window).scrollTop();
+		$('#bg-image1').css('top',(0-(scrolled*.25))+'px');
+    	$('#bg-image2').css('top',(0-(scrolled*.5))+'px');
+		
+	}
+</script>
+</head>
+<body>
+    
+    
+    
+<div id="mainWrapper">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<div id="main">
+    <div id="hMenu" class="bg-image1">
+        <span onClick="openNav()" id="opennav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <div class="hMenuButton"><a href="index.html">Acasa</a></div>
+        <div class="hMenuButton"><a href="#2" style="color: #c40d2e; font-weight: bold;">Galerie</a></div>
+        <div class="hMenuButton"><a href="about.html" onClick="currentSlide(3)">Despre noi</a></div>
+        <div class="hMenuButton"><a href="contact.html" >Contacteaza-ne</a></div>
+    </div>
+    <div style="width: 100%; height: 100%; overflow: hidden;">
+     <video autoplay muted loop id="myVideo">
+        <source src="videos/SalinaTurda__ IncredibleRomania[4K].mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+        
+    </video>
+        
+    
+    <div class="content">
+         <h1>Heading</h1>
+         <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+         <button id="myBtn" onclick="myFunction()">Pause</button>
+        <input type="checkbox" name="un-mute" id="un-mute">
+            <label for="un-mute" class="unmute">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Mute_Icon.svg" title="Mute icon" style="height: 50px; color:white;">
+            </label>
+        <label for="un-mute" class="mute" style="height: 50px; color:white;">
+        <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon" style="height: 50px; color:white;">
+        </label>
+    </div>
+    </div>
+    
+    <div style="width: 100%; height: 1290vh; margin 500px;  left: 100px;">
+                    <div class="vertical-menu">
+
+                        <a href="#slide3">Saline</a>
+                        <a href="#gear" class="">Salina1</a>
+                        <a href="#rope" class="indent">Salina1images</a>
+                        <a href="#quickdraw" class="indent">Salina1video</a>
+                        <a href="#gear" class="">Salina2</a>
+                        <a href="#rope" class="indent">Salina2images</a>
+                        <a href="#quickdraw" class="indent">Salina2video</a>
+                        <a href="#gear" class="">Salina3</a>
+                        <a href="#rope" class="indent">Salina3images</a>
+                        <a href="#quickdraw" class="indent">Salina3video</a>
+                    </div>
+          
+        <center><h1 class="title">O salina</h1>
+            <h2 class="subtitle">Ceva important despre acea salina</h2>
+            <p style="width: 90vw;" class="scris">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+        </center>
+        
+        <center><h1>Locatie:</h1><br><div id="map" style="width:1200px;height:800px"></div></center>
+        
+        <center><div style="width: 98%; height: 290vh;  position:  relative; top: 100px">
+            <div class="gridtype1 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype2 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype3 grd" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype4 grd parallax" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype4 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype3 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype2 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            
+        </div></center>
+        
+        
+        <center><h1 style="font-size: 40px;">O scurta plimbare prin salina Praid</h1><div class="videoclip">
+        <video min-width="110vw" style="margin:100px;" poster="images/praid-salt-mine.jpg" controls>
+            <source src="videos/Intrarea%20in%20salina%20Praid_Entrance%20in%20Praid%20saltmine.mp4" type="video/mp4">
+            </video>
+        
+        </div></center>
+        <hr>
+        
+        <center><h1 class="title">O alta salina</h1>
+            <h2 class="subtitle">Ceva important despre acea salina</h2>
+            <p style="width: 90vw;" class="scris">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+        </center>
+        
+        <center><h1>Locatie:</h1><br><div id="map2" style="width:1200px;height:800px"></div></center>
+        
+        <center><div style="width: 98%; height: 290vh;  position:  relative; top: 100px">
+            <div class="gridtype1 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype2 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype3 grd" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype4 grd parallax" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype4 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype3 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype2 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            
+        </div></center>
+        
+        
+        <center><h1 style="font-size: 40px;">O scurta plimbare prin salina Praid</h1><div class="videoclip">
+        <video min-width="110vw" style="margin:100px;" poster="images/praid-salt-mine.jpg" controls>
+            <source src="videos/Intrarea%20in%20salina%20Praid_Entrance%20in%20Praid%20saltmine.mp4" type="video/mp4">
+            </video>
+        
+        </div></center>
+        <hr>
+        <center><h1 class="title">O alta salina</h1>
+            <h2 class="subtitle">Ceva important despre acea salina</h2>
+            <p style="width: 90vw;" class="scris">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+        </center>
+        
+        <center><h1>Locatie:</h1><br><div id="map2" style="width:1200px;height:800px"></div></center>
+        
+        <center><div style="width: 98%; height: 290vh;  position:  relative; top: 100px">
+            <div class="gridtype1 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype2 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype3 grd" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype4 grd parallax" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype4 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype3 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/image-2009-03-9-5477964-70-salina-praid-harghita-2009.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype2 grd parallax" style="background-image: url(images/salina-subteran.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            <div class="gridtype1 grd" style="background-image: url(images/slanic-1.jpg)">
+                <div class="drk">
+                <!--<center><h1 style="background-color: white; font-size: 40px;"></h1><br>
+                <p style="background-color: white; font-size: 20px;"></p>
+                </center>-->
+                </div>
+            </div>
+            
+        </div></center>
+        
+        
+        <center><h1 style="font-size: 40px;">O scurta plimbare prin salina Praid</h1><div class="videoclip">
+        <video min-width="110vw" style="margin:100px;" poster="images/praid-salt-mine.jpg" controls>
+            <source src="videos/Intrarea%20in%20salina%20Praid_Entrance%20in%20Praid%20saltmine.mp4" type="video/mp4">
+            </video>
+        
+        </div></center>
+        <hr>
+        
+</div>
+    
+    
+    
+    
+</div>
+    <!--<div class="patrat" style="width: 5000px; height: 5000px;"></div>-->
+
+</div>
+</body>
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    var un_mute = document.getElementById('un-mute');
+
+    un_mute.onclick = function() {
+       if(video.muted){
+           video.muted = false;
+       }
+        else {video.muted = true;}
+    }
+    
+    /*map controls*/
+    
+    function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(46.58620, 23.78770),
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+    
+    function myMap2() {
+    var mapOptions2 = {
+        center: new google.maps.LatLng(51.5, -0.12),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map2 = new google.maps.Map(document.getElementById("map2"), mapOptions2);
+}
+    
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</html>

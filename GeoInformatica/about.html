@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Despre noi</title>
+<link type="text/css" href="aboutstylesheet.css" rel="stylesheet" />
+<script>
+	function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+	
+	$(window).bind('scroll',function(e){
+    	parallaxScroll();
+	});
+	
+	function parallaxScroll(){
+		var scrolled = $(window).scrollTop();
+		$('#bg-image1').css('top',(0-(scrolled*.25))+'px');
+    	$('#bg-image2').css('top',(0-(scrolled*.5))+'px');
+		
+	}
+</script>
+</head>
+<body>
+<div id="mainWrapper">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<div id="main">
+    
+    
+    
+    <div id="hMenu" class="bg-image1">
+        <span onClick="openNav()" id="opennav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </span>
+        <div class="hMenuButton"><a href="index.html" >Acasa</a></div>
+        <div class="hMenuButton"><a href="galerie.html" onClick="currentSlide(2)">Galerie</a></div>
+        <div class="hMenuButton"><a href="#" style="color: #c40d2e; font-weight: bold;">Despre noi</a></div>
+        <div class="hMenuButton"><a href="contact.html">Contacteaza-ne</a></div>
+        <!--<div class="hMenuButton" style="float: right; border:none; margin: 0; padding-top: 20px;"><a href="https://www.facebook.com/remus.rv" target="_blank"><img src="images/Logomakr_9LbUlV.png" width="40px" height="40px"></a></div>
+        <div class="hMenuButton" style="float: right; border:none; margin: 0; padding-top: 20px;"><a href="#"><img src="images/Logomakr_4mOeKz.png" width="40px" height="40px"></a></div>-->
+    </div>
+	<center>
+        <div class="topContent1"></div>
+        <div class="topContent2"></div>
+        <div class="slides" id="slide6">
+    <div id="s6contain" style="background-color: white;">
+        <center><h1>DE CE AM ALES ACEASTA TEMA? </h1></center>
+        <br><br>
+        <center><p>Romania este tara cu un puternic potential natural turistic. Putem merge la munte, putem merge la mare ...Ne putem relaxa si trata deopotriva, iar in aceasta categorie intra si salinele din Romania, locul unde vom descoperi cu adevarat beneficiile curative. Aici, istoria si terapia se impletesc.</p></center>
+        <br><br><br>
+        <center><a href="index.html" class="imgbutton"><b>AFLA MAI MULT</b></a></center>
+    </div>
+</div>
+    
+    
+
+
+    
+<div class="slides" id="slide8">
+    <div id="s8contain">
+        <center><h1>CE SUNT SALINELE? </h1></center>
+        <br><br>
+        <center><p>Salinele reprezinta adevarate obiective turistice, iar minele de sare, vechi, istorice, au devenit cu timpul mijloace de tratament pentru minte, trup si suflet...
+O cura in salina iti poate ameliora starea de sanatate.</p></center>
+        <br><br><br>
+        <center><a href="index.html" class="imgbutton"><b>AFLA MAI MULT</b></a></center>
+    </div>
+    
+</div>
+    
+<div class="slides parallax" id="slide9">
+    <div id="s9contain">
+        <center><h1>CE DORIM? </h1></center>
+        <br><br>
+        <center><p>Ne dorim, ca prin intermediul acestui site, sa incurajam lumea sa viziteze cel putin odata o salina din Romania, fiind convinsi ca cei ce le vor vizita se vor simti mai sanatosi si vor romane cu amintiri placute.</p></center>
+        <br><br><br>
+        <center><a href="index.html" class="imgbutton"><b>AFLA MAI MULT</b></a></center>
+        <br><hr style="width: 70%;height: 1px;">
+        <center><h1>Cine suntem? </h1></center>
+        <br><br>
+        <center><p>Echipa care a realizat acest site este formata din elevii: Roman Valentin Remus, Stefan Paul Ciprian si profesorii coordonatori: prof. Dochia Marinela si prof. Ioana-Tatiana Geambasu</p></center>
+        <br><br><br>
+        
+        
+    </div>
+    
+</div>
+        
+    </center>
+    
+
+<div class="footer" style="width: 100%;background-color: gray;text-align: center; margin-bottom: 0;"><h3 syle="font-size:10px;">Site produs de Roman Valentin Remus si Stefan Ciprian, coordonati de prof. Dochia Marinela si prof. Geambasu Ioana</h3></div>
+    
+</div>
+
+
+</div>
+</body>
+
+
+</html>

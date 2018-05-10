@@ -1,0 +1,379 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    
+	zoom: 85%;
+}
+
+#mainWrapper{
+    min-height: 100%;
+    
+}
+
+#logo{
+    position: fixed;
+    z-index: 10;
+    right:250px;
+	top:40px;
+    width: 230px;
+    height: 50px;
+}
+
+#opennav{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: inline;
+    float: left;
+    margin: 20px 30px;
+}
+
+#opennav div{
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: white;
+}
+
+#opennav:hover div{
+    background-color: #c40d2e;
+    transition: 0.2s;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+}
+
+
+#hMenu{
+    width: 97%;
+    height: 80px;
+    margin: 20px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+    z-index: 10;
+    
+}
+
+.hMenuButton{
+    display: inline;
+    float: left;
+    margin: 25px 10px;
+    border-right: 1px solid white;
+}
+
+.hMenuButton a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 12px 26px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.hMenuButton a:hover{
+    color: #c40d2e;
+    
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    
+}
+
+.hMenuButton a:active{
+    color: #c40d2e;
+}
+
+#main{
+    transition: margin-left 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    overflow: hidden;
+	
+    
+}
+
+
+.topContent{
+    
+    
+    
+}
+
+
+.slides{
+    margin-left: -10px;
+    margin-right: -10px;
+    width: auto;
+    height: 1500px;
+    
+    
+}
+
+.parallax{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#slide6{
+    background-image: url(images/Salina-Turda.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 1000px;
+    margin-top: 50px;
+}
+
+#s6contain{
+    position: absolute;
+    width: 1000px;
+    height: 700px;
+    margin-left: 10%;
+    margin-top: 200px;
+}
+
+#s6contain h1{
+    color: darkred; 
+    font-size: 45px;
+}
+
+#s6contain p{
+    color: black;
+    font-size: 25px;
+}
+
+#slide7{
+    height: 900px;
+}
+
+.s7video{
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 430px;
+}
+
+#slide8{
+    background-image: url(images/IMGP5656.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    margin-top: 50px;
+}
+
+#s8contain{
+    position: absolute;
+    width: 900px;
+    height: 700px;
+    margin-left: 5%;
+    margin-top: 200px;
+}
+
+#s8contain h1{
+    color: #c40d2e; 
+    font-size: 45px;
+}
+
+#s8contain p{
+    color: white;
+    font-size: 25px;
+}
+
+slide9{
+    background-image: url(images/0_bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-top: 50px;
+}
+
+#s9contain{
+    position: absolute;
+    width: 900px;
+    height: 700px;
+    margin-left: 40%;
+    margin-top: 200px;
+}
+
+#s9contain h1{
+    color: #c40d2e; 
+    font-size: 45px;
+}
+
+#s9contain p{
+    color: grey;
+    font-size: 25px;
+}
+
+.imgbutton{
+    display: inline-block;
+    padding: 14px 16px;
+    margin: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.imgbutton:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-style: bold;
+}
+
+
+#slide3{
+    height: 2000px;
+}
+
+slide3container{
+    width:1
+}
+
+
+
+#s3image1{
+    width: 800px;
+    height: 500px;
+    background-image: url(images/moon_astronauts_moon_landing_b_2560x1600_vehiclehi.com.jpg);
+    float: left;
+    margin: 4 4 4 4;
+    
+    
+}
+
+#s3image2{
+    width: 500px;
+    height: 500px;
+    background-image: url(images/a7358943e27a27b3e38dae44497734ed.jpg);
+    float: left;
+    margin: 4 4 4 4;
+    
+}
+
+#s3image3{
+    width: 400px;
+    height: 500px;
+    background-image: url(images/gl_chrono4_f.jpg);
+    float: left;
+    margin: 4 4 4 4;
+    
+}
+
+#s3image4{
+    width: 600px;
+    height: 500px;
+    background-image: url(images/7-Brosnan-Seamaster.jpg);
+    margin: 4 4 4 4;
+    float: left;
+    
+}
+
+#s3image5{
+    width: 290px;
+    height: 500px;
+    margin: 4 4 4 4;
+    
+    position: relative;
+    top: 508px;
+    left: 1018px;
+    
+    background-image: url(images/atlanta-olympic-special.jpg);
+}
+
+
+.s3image {
+    position: relative;
+    width: 50%;
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#slide3container{
+    margin-top: 40px;
+    width: 1320px;
+    height: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.s3overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.s3overlay h1{
+    opacity: 0;
+    color: white;
+}
+
+.s3overlay p{
+    opacity: 0;
+    color: white;
+}
+
+.s3overlay:hover h1{
+    opacity: 1;
+    font-family: monospace;
+}
+
+.s3overlay:hover p{
+    opacity: 1;
+    font-size: 20px;
+}
+
+.s3overlay:hover{
+    background-color: rgba(0,0,0, 0.7);
+}
+
+
+
